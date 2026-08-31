@@ -65,6 +65,8 @@ void print5(int n){
     
 }
 void print6(int n){
+
+
     for (int i = 1; i < n+1; i++)
     {
         for (int j = 1; j <= n-i+1; j++)
@@ -102,6 +104,23 @@ void print7(int n){
 
         cout<<endl;
     }
+
+    //star
+
+    for (int j = 0; j <2*i+1; j++)
+    {
+        cout<<"*";
+    }
+    
+     //space
+
+    for (int j = 0; j <n-i-1; j++)
+    {
+        cout<<" ";
+    }
+
+    cout<<endl;
+}
     
 }
 void print8(int n){
@@ -144,4 +163,9 @@ int main(){
     }
     
 
+        print7(n);
+
+    }
+
+  return 0;  
 }
