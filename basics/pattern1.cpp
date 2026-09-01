@@ -133,6 +133,10 @@ void print8(int n){
     }
     
 }
+//if you are print pattern number 9 besic logic is combine the pattern number 7 and 8 and print look like a
+//print7();
+//print8();
+//then result are printed as well as.
 
 
 int main(){
@@ -142,7 +146,7 @@ int main(){
     {
         int n;
         cin>>n;
-        print8(n);
+        print7(n);
     }
 
   return 0;  
