@@ -280,6 +280,70 @@ void print17(int n){
     
     
 }
+void print18(int n){
+    for (int i = 0; i < n; i++)
+    {
+        for (char ch = 'E'-i; ch <= 'E'; ch++)
+        {
+            cout<<ch<<" ";
+        }
+        cout<<endl;
+        
+    }
+    
+}
+void print19(int n){
+    int iniS = 0;
+    for (int i = 0; i < n; i++)
+    {
+        //stars
+        for (int j = 1; j <= n-i; j++)
+        {
+            cout<<"*";
+        }
+        
+
+        //spaces
+        for (int j = 1; j <= iniS; j++)
+        {
+            cout<<" ";
+        }
+        //stars
+        for (int j = 1; j <= n-i; j++)
+        {
+            cout<<"*";
+        }
+        iniS +=2;
+        cout<<endl;
+    }
+    iniS = 8;
+    for (int i = 1; i <= n; i++)
+    {
+       {
+        //stars
+        for (int j = 1; j <= i; j++)
+        {
+            cout<<"*";
+        }
+        
+
+        //spaces
+        for (int j = 1; j <= iniS; j++)
+        {
+            cout<<" ";
+        }
+        //stars
+        for (int j = 1; j <= i; j++)
+        {
+            cout<<"*";
+        }
+        iniS -=2;
+        cout<<endl;
+    }
+    }
+    
+    
+}
 
 
 int main(){
@@ -289,7 +353,7 @@ int main(){
     {
         int n;
         cin>>n;
-        print17(n);
+        print19(n);
     }
 
   return 0;  
